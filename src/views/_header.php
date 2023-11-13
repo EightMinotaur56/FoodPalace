@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="<?= asset_url('styles/style.css'); ?>">
     <script src="https://kit.fontawesome.com/5f4f01cc86.js" crossorigin="anonymous"></script>
 </head>
+<Title>Food Palace</Title>
 
 
 

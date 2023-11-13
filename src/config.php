@@ -4,6 +4,10 @@ define('BASE_URL', 'http://restaurant.localhost/');
 
 define('BASE_PATH', __DIR__);
 
+/*
+instanceId: restaurant
+password: restaurantroot
+*/
 
 define('DB_HOST','127.0.0.1');
 define('DB_PORT',3306);
