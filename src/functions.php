@@ -24,12 +24,17 @@ function is_post()
 }
 
 function db_connect(){
-   $ipAddress="130.211.57.2";
-   $user="restaurant";
-   $password="restaurantroor";
-   $db="restaurant";
+    $db_host=DB_HOST;
+    $db_port=DB_PORT;
+    $db_name=DB_NAME;
+    try{
+        $db= new PDO("mysql:host={$db_host};dbname={$db_name};port={$db_port}",DB_USER,DB_PASS);
+    }
+    catch(PDOException $e){
+        dd("Error:" . $e->getMessage());
+    };
 
-   $connect=mysqli_connect("cloudipad:",$ipAddress,$user,$password,$db);
+    return $db;
 }
 
 function redirect($page='home'){
