@@ -88,7 +88,7 @@ ul *{
     color: black;
 }
 
-/*.home{
+.home{
     background-image: url('../images/homePageBackground.jpg');
     background-size: cover;
     position: absolute;
@@ -117,4 +117,4 @@ ul *{
     color:white;
     font-size: 200%;
     margin-left: 50%;
-}*/
+}
