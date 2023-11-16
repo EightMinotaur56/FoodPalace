@@ -29,7 +29,6 @@
             <div class="navigation">
                 <ul>
                     <li><a href="<?php echo page_url('home'); ?>">Home</a></li>
-                    <li><a href="<?= page_url('about'); ?>">About</a></li>
                     <li><a href="<?= page_url('contact'); ?>">Contact</a></li>
                 </ul>
                 <button type="button" class="reservation"><a href="<?= page_url('reservation'); ?>" role="button">Reservation</a></button>
