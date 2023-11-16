@@ -1,9 +1,5 @@
 <?php
-    $db=db_connect();
-
-    $select=$db->prepare("SELECT * FROM reservations");
-    $select->execute();
-    $results=$select->fetchAll(PDO::FETCH_ASSOC);
+    $results=listReservations($db);
 ?>
 <div class="home">
     <div class="content">

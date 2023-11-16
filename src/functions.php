@@ -41,3 +41,10 @@ function redirect($page='home'){
     header('Location: '.BASE_URL.'?page='.$page);
     die();
 }
+
+function listReservations(PDO $db){
+    $select=$db->prepare("SELECT * FROM reservations");
+    $select->execute();
+    $results=$select->fetchAll(PDO::FETCH_ASSOC);
+    return $results;
+}
