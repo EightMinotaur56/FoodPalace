@@ -29,12 +29,11 @@ function db_connect(){
     $db_name=DB_NAME;
     try{
         $db= new PDO("mysql:host={$db_host};dbname={$db_name};port={$db_port}",DB_USER,DB_PASS);
+        return $db;
     }
     catch(PDOException $e){
-        dd("Error:" . $e->getMessage());
+        return null;
     };
-
-    return $db;
 }
 
 function redirect($page='home'){
@@ -53,27 +52,21 @@ function listReservations(PDO $db){
     return $results;
 }
 
-function addReservation($clientName,$clientPhone,$partySize,$reservationDate,PDO $db){
-    $insert=$db->prepare("INSERT INTO reservations (clientName, clientPhone, partySize, reservationDate) 
+function addReservation($clientName,$clientPhone,$partySize,$reservationDate,$db){
+    try{
+        $insert=$db->prepare("INSERT INTO reservations (clientName, clientPhone, partySize, reservationDate) 
                 VALUES (:clientName, :clientPhone, :partySize, :reservationDate)");
-    $insert->bindValue(':clientName',$clientName);
-    $insert->bindValue(':clientPhone',$clientPhone);
-    $insert->bindValue(':partySize',$partySize);
-    $insert->bindValue(':reservationDate',$reservationDate);
+        $insert->bindValue(':clientName',$clientName);
+        $insert->bindValue(':clientPhone',$clientPhone);
+        $insert->bindValue(':partySize',$partySize);
+        $insert->bindValue(':reservationDate',$reservationDate);
+    }catch(Throwable $e){
+        redirect('reservationFailed');
+    }
     try{
         $insert->execute();
         redirect('reservationSuccess');
     }catch(PDOException $e){
-        echo"<br>";
-        echo"<br>";
-        echo"<br>";
-        echo"<br>";
-        echo"<br>";
-        echo"<br>";
-        echo"<br>";
-        echo"<br>";
-        echo"<br>";
-        dd($e->getMessage());
-        //redirect('reservationFailed');
-    }
+        redirect('reservationFailed');
+    } 
 }
