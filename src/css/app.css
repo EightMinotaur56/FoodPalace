@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Reem+Kufi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@700&family=Poppins:wght@500&family=Reem+Kufi&display=swap');
 
+ul *{
+    list-style-type: none;
+}
+/*#region Header*/
 .header{
     background-color: #F9C416;
     position: absolute;
@@ -16,10 +20,6 @@
     align-items: center;
     justify-content: space-between;
     max-height: 110px;
-}
-
-ul *{
-    list-style-type: none;
 }
 
 .logo{
@@ -87,6 +87,7 @@ ul *{
 .navigation .reservation a:hover {
     color: black;
 }
+/*#endregion Header*/
 
 .home{
     background-image: url('../images/homePageBackground.jpg');
@@ -114,7 +115,48 @@ ul *{
     bottom: 0;
 }
 .containerTablesAndChairs .content{
-    color:white;
+    color:black;
     font-size: 200%;
     margin-left: 50%;
 }
+
+/*#region 404*/
+.pageNotFound {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.pageNotFound .content{
+    margin-left: 42.5%;
+}
+
+.backHome{
+    margin-left: 30px;
+    min-width: 200px;
+    max-width: 200px;
+    background-color: #ffffff;
+    font-size: 200%;
+    padding: 6px 13px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
+    border: #000000 solid 2px;
+    transition: .3s ease-in-out;
+}
+
+.backHome:hover {
+    transform: translateY(-2px);
+    background-color: #F9C416;
+    color: rgb(0, 0, 0);
+}
+
+.backHome a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.backHome a:hover {
+    color: black;
+}
+/*#endregion 404*/
