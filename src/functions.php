@@ -59,11 +59,21 @@ function addReservation($clientName,$clientPhone,$partySize,$reservationDate,PDO
     $insert->bindValue(':clientName',$clientName);
     $insert->bindValue(':clientPhone',$clientPhone);
     $insert->bindValue(':partySize',$partySize);
-    $insert->bindValue(':reservationDate',$fullDate);
+    $insert->bindValue(':reservationDate',$reservationDate);
     try{
         $insert->execute();
         redirect('reservationSuccess');
     }catch(PDOException $e){
-        redirect('reservationFailed');
+        echo"<br>";
+        echo"<br>";
+        echo"<br>";
+        echo"<br>";
+        echo"<br>";
+        echo"<br>";
+        echo"<br>";
+        echo"<br>";
+        echo"<br>";
+        dd($e->getMessage());
+        //redirect('reservationFailed');
     }
 }

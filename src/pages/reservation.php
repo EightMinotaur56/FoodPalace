@@ -24,7 +24,15 @@
         }
 
         if(count($errors)===0){
-            $fullDate=$reservationDate . $time;
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+            $fullDate=$reservationDate . ' '. $time;
+
             addReservation($clientName,$clientPhone,$partySize,$fullDate,$db);
         }
     }

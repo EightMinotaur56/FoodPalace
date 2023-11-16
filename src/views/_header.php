@@ -1,5 +1,5 @@
 <?php
-    //$db=db_connect();//If we have this here we don't need to call db_connect() in the pages php files
+    $db=db_connect();//If we have this here we don't need to call db_connect() in the pages php files
 ?>
 <!DOCTYPE html>
 <html lang="en">
