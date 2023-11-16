@@ -62,7 +62,7 @@ function addReservation($clientName,$clientPhone,$partySize,$reservationDate,PDO
     $insert->bindValue(':reservationDate',$fullDate);
     try{
         $insert->execute();
-        redirect('reservationConfirm');
+        redirect('reservationSuccess');
     }catch(PDOException $e){
         redirect('reservationFailed');
     }

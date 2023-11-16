@@ -2,15 +2,12 @@
     <div class="reservationsPage">
         <div class="box">
             <div class="interiorResult">
-                <i class="fa-solid fa-circle-xmark fa-6x"></i>
+                <i class="fa-solid fa-circle-check fa-6x" style="color: #000000;"></i>
                 <h1>
-                    RESERVATION FAILED
+                    YOUR RESERVATION IS CONFIRMED!
                 </h1>
                 <h2>
-                    Contact us at +36 70 12345 678 or
-                </h2>
-                <h2>
-                    info@foodpalace.com to confer with us
+                    THANK YOU FOR EATING WITH US
                 </h2>
                 <button type="button" class="backHome">
                     <a href="<?= page_url('home') ?>" role="button">

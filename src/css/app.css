@@ -229,13 +229,7 @@ ul *{
     margin: 20px;
 }
 
-.reservationsPage .box .interiorSuccess{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-
-.reservationsPage .box .interiorFailed{
+.reservationsPage .box .interiorResult{
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
@@ -243,11 +237,11 @@ ul *{
     justify-content: center;
     margin: 70px;
 }
-.reservationsPage .box .interiorFailed h1{
-    font-size: 500%;
+.reservationsPage .box .interiorResult h1{
+    font-size: 300%;
 }
-.reservationsPage .box .interiorFailed h2{
-    font-size: 250%;
+.reservationsPage .box .interiorResult h2{
+    font-size: 200%;
 }
 /*#endregion Reservation Pages*/
 
