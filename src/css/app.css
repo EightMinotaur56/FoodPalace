@@ -159,6 +159,19 @@ ul *{
 /*#endregion Home Page*/
 
 
+/*#region Menu*/
+.menu{
+    position: absolute;
+    top: 110px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+/*#endregion Menu*/
+
+
 /*#region Contact*/
 .contact{
     display: flex;
