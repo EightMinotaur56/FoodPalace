@@ -1,9 +1,9 @@
 <?php
-    $results=listReservations($db);
+    //$results=listReservations($db);
 ?>
 <div class="home">
     <div class="content">
-        <p>Home Page!</p>
+        <!-- Currently used for testing the database
         <?php foreach($results as $result):?>
             <div>
                 ID: <?php echo $result['id'];?>
@@ -21,5 +21,10 @@
                 Reservation Date: <?php echo $result['reservationDate'];?>
             </div>
         <?php endforeach;?>
+        -->
+        <h1>FOOD PALACE</h1>
+        <button type="button" class="menuButton">
+            <a href="<?= page_url('menu')?>"> MENU </a>
+        </button>
     </div>
 </div>

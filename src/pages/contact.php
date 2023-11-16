@@ -2,8 +2,8 @@
 
 ?>
 
-<div class="">
-    <div>
+<div class="container">
+    <div class="content">
 
     </div>
 </div>

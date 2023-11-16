@@ -44,7 +44,11 @@ function redirect($page='home'){
 
 function listReservations(PDO $db){
     $select=$db->prepare("SELECT * FROM reservations");
-    $select->execute();
-    $results=$select->fetchAll(PDO::FETCH_ASSOC);
+    try{
+        $select->execute();
+        $results=$select->fetchAll(PDO::FETCH_ASSOC);
+    }catch(PDOException $e){
+        dd($e->getMessage());
+    }
     return $results;
 }

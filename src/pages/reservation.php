@@ -1,7 +1,7 @@
 <?php
 
 ?>
-<div class="containerTablesAndChairs">
+<div class="container">
     <div class="content">
 
     </div>

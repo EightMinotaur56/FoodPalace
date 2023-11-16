@@ -1,7 +1,4 @@
-<?php
-    
-?>
-<div class="menu">
+<div class="container">
     <div class="content">
 
     </div>
