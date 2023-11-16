@@ -52,3 +52,18 @@ function listReservations(PDO $db){
     }
     return $results;
 }
+
+function addReservation($clientName,$clientPhone,$partySize,$reservationDate,PDO $db){
+    $insert=$db->prepare("INSERT INTO reservations (clientName, clientPhone, partySize, reservationDate) 
+                VALUES (:clientName, :clientPhone, :partySize, :reservationDate)");
+    $insert->bindValue(':clientName',$clientName);
+    $insert->bindValue(':clientPhone',$clientPhone);
+    $insert->bindValue(':partySize',$partySize);
+    $insert->bindValue(':reservationDate',$fullDate);
+    try{
+        $insert->execute();
+        redirect('reservationConfirm');
+    }catch(PDOException $e){
+        redirect('reservationFailed');
+    }
+}

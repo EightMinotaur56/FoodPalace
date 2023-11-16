@@ -5,6 +5,19 @@ ul *{
     list-style-type: none;
 }
 
+.container{
+    background-image: url('../images/tablesAndChairs.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
 /*#region Header*/
 .header{
     background-color: #F9C416;
@@ -90,6 +103,7 @@ ul *{
 }
 /*#endregion Header*/
 
+
 /*#region Home Page*/
 .home{
     background-image: url('../images/homePageBackground.jpg');
@@ -144,18 +158,8 @@ ul *{
 
 /*#endregion Home Page*/
 
-.container{
-    background-image: url('../images/tablesAndChairs.jpg');
-    background-size: cover;
-    position: absolute;
-    top: 110px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-}
 
+/*#region Contact*/
 .contact{
     display: flex;
     flex-direction: column;
@@ -182,6 +186,71 @@ ul *{
     background-color: white;
     color:black
 }
+
+.contact .box .interior{
+    margin:30px 0 0 50px;
+}
+.contact .box .interior .row{
+    display: flex;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.contact .box .interior .row h2{
+    margin-left: 30px;;
+    font-size: 200%;
+}
+/*#endregion Contact*/
+
+
+/*#region Reservation Pages*/
+.reservationsPage{
+    position: relative;
+    top:100px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.reservationsPage .box{
+    min-width: 1065px;
+    max-width: 1065px;
+    min-height: 660px;
+    max-height: 660px;
+    border: #000000;
+    border-radius: 50px;
+    background-color: white;
+    opacity: 78%;
+    color:black
+}
+
+.reservationsPage .box .interior{
+    display: flex;
+    margin: 20px;
+}
+
+.reservationsPage .box .interiorSuccess{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.reservationsPage .box .interiorFailed{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    margin: 70px;
+}
+.reservationsPage .box .interiorFailed h1{
+    font-size: 500%;
+}
+.reservationsPage .box .interiorFailed h2{
+    font-size: 250%;
+}
+/*#endregion Reservation Pages*/
+
 
 /*#region 404*/
 .pageNotFound {
