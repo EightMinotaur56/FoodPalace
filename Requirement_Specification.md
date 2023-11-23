@@ -1,5 +1,5 @@
  
-## Project Name: DaQuiz
+## Project Name: Food Palace
 
 ## Purpose: 
 - The purpose of DaQuiz is to provide an interactive online platform for users to engage in short quizzes on
