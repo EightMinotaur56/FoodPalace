@@ -81,7 +81,6 @@
                             <option value="21:30">21:30</option>
                             <option value="22:00">22:00</option>
                         </select>
-                        <!--<input type="time" min="12:00" max="21:00" step="1800" name="time" value="<?= $time?>">-->
                     </div>
                     <button type="submit">Submit</button>
                 </form>
