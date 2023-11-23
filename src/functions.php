@@ -70,3 +70,16 @@ function addReservation($clientName,$clientPhone,$partySize,$reservationDate,$db
         redirect('reservationFailed');
     } 
 }
+
+function getVegan($db){
+    $vegan = $db->prepare("SELECT * FROM vegan");
+    try{
+        $vegan->execute();
+        $result= $vegan->fetchAll(PDO::FETCH_ASSOC);
+    }
+    catch(PDOException $e){
+        dd($e->getMessage());
+    }
+
+    return $result;
+}
