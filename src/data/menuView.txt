@@ -1,0 +1,25 @@
+This shows how to create the menu view
+
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `root`@`localhost` 
+    SQL SECURITY DEFINER
+VIEW `menu` AS
+    SELECT DISTINCT
+        `m`.`id` AS `id`,
+        `m`.`name` AS `name`,
+        `m`.`description` AS `description`
+    FROM
+        `main` `m` 
+    UNION SELECT DISTINCT
+        `v`.`id` AS `id`,
+        `v`.`name` AS `name`,
+        `v`.`description` AS `description`
+    FROM
+        `vegan` `v` 
+    UNION SELECT DISTINCT
+        `d`.`id` AS `id`,
+        `d`.`name` AS `name`,
+        `d`.`description` AS `description`
+    FROM
+        `desserts` `d`
