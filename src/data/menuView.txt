@@ -1,5 +1,3 @@
-This shows how to create the menu view
-
 CREATE 
     ALGORITHM = UNDEFINED 
     DEFINER = `root`@`localhost` 
@@ -8,18 +6,21 @@ VIEW `menu` AS
     SELECT DISTINCT
         `m`.`id` AS `id`,
         `m`.`name` AS `name`,
-        `m`.`description` AS `description`
+        `m`.`description` AS `description`,
+        `m`.`cost` AS `cost`
     FROM
         `main` `m` 
     UNION SELECT DISTINCT
         `v`.`id` AS `id`,
         `v`.`name` AS `name`,
-        `v`.`description` AS `description`
+        `v`.`description` AS `description`,
+        `v`.`cost` AS `cost`
     FROM
         `vegan` `v` 
     UNION SELECT DISTINCT
         `d`.`id` AS `id`,
         `d`.`name` AS `name`,
-        `d`.`description` AS `description`
+        `d`.`description` AS `description`,
+        `d`.`cost` AS `cost`
     FROM
         `desserts` `d`

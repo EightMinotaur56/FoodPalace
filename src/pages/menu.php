@@ -1,26 +1,14 @@
-<?php
-    $vegan=getVegan($db);
-?>
 <div class="menu">
+    <h1>OUR MENU</h1>
     <div class="content">
-        <?php foreach($vegan as $food):?>
-            <?php
-                echo '<br>';
-                echo '<br>';
-                echo '<br>';
-                echo '<br>';
-                echo '<br>';
-                echo '<br>';
-                echo '<br>';
-                echo '<br>';
-                echo '<br>';
-                echo '<br>';
-                echo $food['name'];    
-                echo '<br>';
-                echo $food['description']; 
-                echo '<br>';
-                echo '<img src="'. asset_url($food['imageURL']).'" alt="falafel Image">'
-            ?>
-        <?php endforeach;?>
+        <div class="box">
+            <button type="button" class="button"><a href="<?=page_url('vegan')?>" class="a">Vegan</a></button>
+        </div>
+        <div class="box">
+            <button type="button" class="button"><a href="<?=page_url('main')?>" class="a">Main</a></button>
+        </div>
+        <div class="box">
+            <button type="button" class="button"><a href="<?=page_url('desserts')?>" class="a">Desserts</a></button>
+        </div>
     </div>
 </div>
