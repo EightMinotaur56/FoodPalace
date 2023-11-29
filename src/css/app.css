@@ -172,12 +172,10 @@ ul *{
     right: 0;
     bottom: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 .menu h1{
-    margin-bottom: 80px;
     color:var(--yellow);
     font-family: Poppins;
     font-size: 96px;
@@ -229,6 +227,13 @@ ul *{
     box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
     border: #fff solid 2px;
     transition: .3s ease-in-out;
+    text-decoration: none;
+    color: var(--darkRed);
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
 }
 
 .menu .box .button:hover {
@@ -239,13 +244,6 @@ ul *{
 
 .menu .box .a {
     background-image: none;
-    text-decoration: none;
-    color: var(--darkRed);
-    font-family: Poppins;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
 }
 /*#endregion Menu*/
 
@@ -381,14 +379,13 @@ ul *{
 /*#region vegan*/
 .vegan {
     position: absolute;
-    top:-250px;
+    top: 110px;
     left: 0;
     right: 0;
     bottom: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 .vegan h1{
     color: black;
@@ -443,14 +440,13 @@ ul *{
 /*#region main*/
 .main {
     position: absolute;
-    top:-250px;
+    top: 110px;
     left: 0;
     right: 0;
     bottom: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 .main h1{
     color: black;
@@ -470,23 +466,23 @@ ul *{
 }
 
 .main .content :first-child {
-    background-image: url('../images/');
+    background-image: url('../images/mainCourse.jpg');
     background-size: cover;
 }
 .main .content :nth-child(2){
-    background-image: url('../images/');
+    background-image: url('../images/cevap.jpg');
     background-size: cover;
 }
 .main .content :nth-child(3){
-    background-image: url('../images/');
+    background-image: url('../images/burger.jpg');
     background-size: cover;
 }
 .main .content :nth-child(4){
-    background-image: url('../images/');
+    background-image: url('../images/pizza.jpg');
     background-size: cover;
 }
 .main .content :nth-child(5){
-    background-image: url('../images/');
+    background-image: url('../images/steak.jpg');
     background-size: cover;
 }
 
@@ -505,14 +501,13 @@ ul *{
 /*#region desserts*/
 .desserts {
     position: absolute;
-    top:-250px;
+    top: 110px;
     left: 0;
     right: 0;
     bottom: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 .desserts h1{
     color: black;
@@ -532,23 +527,23 @@ ul *{
 }
 
 .desserts .content :first-child {
-    background-image: url('../images/');
+    background-image: url('../images/tiramisu.jpg');
     background-size: cover;
 }
 .desserts .content :nth-child(2){
-    background-image: url('../images/');
+    background-image: url('../images/cheesecake.jpg');
     background-size: cover;
 }
 .desserts .content :nth-child(3){
-    background-image: url('../images/');
+    background-image: url('../images/brownie.jpg');
     background-size: cover;
 }
 .desserts .content :nth-child(4){
-    background-image: url('../images/');
+    background-image: url('../images/lavaCake.jpg');
     background-size: cover;
 }
 .desserts .content :nth-child(5){
-    background-image: url('../images/');
+    background-image: url('../images/pie.jpg');
     background-size: cover;
 }
 

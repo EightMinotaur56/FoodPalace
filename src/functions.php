@@ -83,3 +83,27 @@ function getVegan($db){
 
     return $result;
 }
+function getMain($db){
+    $vegan = $db->prepare("SELECT * FROM main");
+    try{
+        $vegan->execute();
+        $result= $vegan->fetchAll(PDO::FETCH_ASSOC);
+    }
+    catch(PDOException $e){
+        dd($e->getMessage());
+    }
+
+    return $result;
+}
+function getDesserts($db){
+    $vegan = $db->prepare("SELECT * FROM desserts");
+    try{
+        $vegan->execute();
+        $result= $vegan->fetchAll(PDO::FETCH_ASSOC);
+    }
+    catch(PDOException $e){
+        dd($e->getMessage());
+    }
+
+    return $result;
+}
