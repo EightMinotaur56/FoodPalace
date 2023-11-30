@@ -134,6 +134,7 @@ img{
 .home{
     background-image: url('../images/homePageBackground.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
     top: var(--topSpacing);
     left: 0;
