@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Reem+Kufi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@700&family=Poppins:wght@500&family=Reem+Kufi&display=swap');
 
+/*You can place global variables here*/
 :root{
     --yellow:#F9C416;
     --darkRed:#651B1B;
+    --topSpacing: 110px;
 }
 
 ul *{
@@ -28,7 +30,7 @@ img{
     background-image: url('../images/tablesAndChairs.jpg');
     background-size: cover;
     position: absolute;
-    top: 110px;
+    top: var(--topSpacing);
     left: 0;
     right: 0;
     bottom: 0;
@@ -133,7 +135,7 @@ img{
     background-image: url('../images/homePageBackground.jpg');
     background-size: cover;
     position: absolute;
-    top: 110px;
+    top: var(--topSpacing);
     left: 0;
     right: 0;
     bottom: 0;
@@ -386,7 +388,7 @@ img{
 /*#region 404*/
 .pageNotFound {
     position: absolute;
-    top: 110px;
+    top: var(--topSpacing);
     left: 0;
     right: 0;
     bottom: 0;
@@ -424,10 +426,11 @@ img{
 }
 /*#endregion 404*/
 
+
 /*#region vegan*/
 .vegan {
     position: absolute;
-    top: 110px;
+    top: var(--topSpacing);
     left: 0;
     right: 0;
     bottom: 0;
@@ -453,10 +456,11 @@ img{
 }
 /*#endregion vegan*/
 
+
 /*#region main*/
 .main {
     position: absolute;
-    top: 110px;
+    top: var(--topSpacing);
     left: 0;
     right: 0;
     bottom: 0;
@@ -493,10 +497,11 @@ img{
 }
 /*#endregion main*/
 
+
 /*#region desserts*/
 .desserts {
     position: absolute;
-    top: 110px;
+    top: var(--topSpacing);
     left: 0;
     right: 0;
     bottom: 0;
@@ -533,10 +538,11 @@ img{
 }
 /*#endregion desserts*/
 
+
 /*#region fullMenu*/
 .fullMenu{
     position: absolute;
-    top: 110px;
+    top: var(--topSpacing);
     left: 0;
     right: 0;
     bottom: 0;
@@ -558,6 +564,7 @@ img{
     resize: both;
 }
 /*#endregion fullMenu*/
+
 
 /*#region footer*/
 .footerNavButton{
