@@ -227,7 +227,7 @@ img{
     background-size: cover;
 }
 
-.menu .box{
+.menu .content .box{
     display: flex;
     width: 390px;
     height: 500px;
@@ -238,7 +238,7 @@ img{
     align-items: center;
 }
 
-.menu .box .button{
+.menu .content .box .button{
     background-image: none;
     position: relative;
     display: inline-block;
@@ -259,13 +259,13 @@ img{
     line-height: normal;
 }
 
-.menu .box .button:hover {
+.menu .content .box .button:hover {
     transform: translateY(-2px);
     background-color: #fff;
     color: var(--darkRed);
 }
 
-.menu .box .a {
+.menu .content .box .a {
     background-image: none;
 }
 
