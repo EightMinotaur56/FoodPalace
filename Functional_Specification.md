@@ -12,17 +12,21 @@
 
 ## General Functionality
 - Home Page
-  "Start" button to navigate to the quiz topic selection page.
-- Contact pages.
-  Description regarding the website and contacts of developers
-- Quiz page
-  Questions, options, and user progress.
-- Result page
-  Immediate feedback on quiz performance, including scores and comments.
-- Quiz category
-  Categorized quizzes by topic.
-- Users score
-  System tracks user scores and displays them at the end.The score is not saved and the user can choose to either do another quiz or to exit our website.
+  Menu button that takes the users to a menu category selection screen with navigations in the header to contacts, reservation, and home
+- Contact page
+  Description regarding how to contact the restaurant
+- Reservation Page
+  On this page a user can add a reservation to the restaurant
+- Menu
+  This pages shows the different menu categories the restaurant offers
+- Vegan
+  This page contains the vegan food options
+- Main
+  This page contains the main course dishes
+- Desserts
+  This page contains the desserts
+- Complete Menu
+  This page lists all the food on the menu
 
 ## User Interface (UI) for creating a reservation and looking at the restaurants menu
 - Create an engaging and interactive user interface.
@@ -49,6 +53,7 @@
 
 ## Technology Stack
 - Front-end: HTML, CSS, and php will be used to build the user interface and enhance interactivity.
+- Back-end: mysql databse using php PDO
 
 
 
