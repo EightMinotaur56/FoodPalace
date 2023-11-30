@@ -2,6 +2,16 @@
 
 function dd($var)
 {
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
     echo "<pre>";
     var_dump($var);
     echo "</pre>";
