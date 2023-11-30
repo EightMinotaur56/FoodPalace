@@ -371,12 +371,11 @@ img{
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    align-items: center;
-    justify-content: center;
     margin: 70px;
 }
 
 .submitButton{
+    margin-left: 375px;
     background-color: #fff;
     padding: 6px 13px;
     border-radius: 200px;
