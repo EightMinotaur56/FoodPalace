@@ -4,7 +4,10 @@
     $page=explode("=",$link);
     $page=$page[1];
     $category=$_POST['category']??null;
-    $previous=explode('=',$previousPage)[1];
+    $previous='';
+    if(isset($previousPage)){
+        $previous=explode('=',$previousPage)[1];
+    }
 
     $isFirst=false;
     if($previous==='menu'){

@@ -374,6 +374,10 @@ img{
     margin: 70px;
 }
 
+.reservationsPage .box .interior form{
+    height: 800px;
+}
+
 .submitButton{
     margin-left: 375px;
     background-color: #fff;
