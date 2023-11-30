@@ -82,7 +82,11 @@
                             <option value="22:00">22:00</option>
                         </select>
                     </div>
-                    <button type="submit">Submit</button>
+                    <div>
+                        <button 
+                        class="submitButton"
+                        type="button">Submit</button>
+                    </div>
                 </form>
             </div>
         </div>
