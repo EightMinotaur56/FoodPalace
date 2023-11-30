@@ -71,6 +71,11 @@ img{
     font-size: 400%;
 }
 
+.logoImage{
+    width: 90px;
+    height: 50px;
+}
+
 .navigation {
     display: flex;
     align-items: center;

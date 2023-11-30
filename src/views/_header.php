@@ -22,7 +22,7 @@
         <div class="content">
             <div class="logo">
                 <ul>
-                    <li><image src="<?= asset_url('images/logo.png')?>" alt=""></li>
+                    <li><image src="<?= asset_url('images/logo.png')?>" alt="" class="logoImage"></li>
                     <li><h1>Palace</h1></li>
                 </ul>
             </div>
