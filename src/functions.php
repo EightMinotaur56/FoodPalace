@@ -107,3 +107,17 @@ function getDesserts($db){
 
     return $result;
 }
+
+
+function getMenu($db){
+    $menu = $db->prepare("SELECT * FROM menu");
+    try{
+        $menu->execute();
+        $result= $menu->fetchAll(PDO::FETCH_ASSOC);
+    }
+    catch(PDOException $e){
+        dd($e->getMessage());
+    }
+
+    return $result;
+}

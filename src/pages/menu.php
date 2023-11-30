@@ -11,4 +11,5 @@
             <a href="<?=page_url('desserts')?>" class="a"><button type="button" class="button">Desserts</button></a>
         </div>
     </div>
+    <a href="<?=page_url('fullMenu')?>"><button type="button" class='goToFullMenu'>Full Menu</button></a>
 </div>

@@ -1,14 +1,14 @@
-# Project: DaQuiz Functional Specification
+# Project: Food Palace Functional Specification
 ## Introduction
-- The purpose of this document is to provide a detailed description of the functional requirements for the DaQuiz project.
-  DaQuiz aims to create an interactive online platform for users to engage in short quizzes on various topics, promoting both knowledge and 
-  entertainment.We currently have 3 categories that the user can choose from which are mathematics,computer science and history.
-  All of our questions are medium level questions.
+- The purpose of this document is to provide a detailed description of the functional requirements for the Food Palace project.
+  Food Palace aims to create an interactive online platform for users to create a reservation for the restaurant and look at our
+  menu items.
 
 ## User Roles
-- Access and interact with quizzes without creating an account.
-- The user can just join a quiz without having to register.
-- The user has to complete each question of our quiz in less than 15 seconds.
+- Access and interact with the platform without login.
+- The user can easily create a reservationn, aftter that a success or failure screen will be posted based on the result of
+  the reservation.
+- The user can also look at the 3 menu categories.
 
 ## General Functionality
 - Home Page
