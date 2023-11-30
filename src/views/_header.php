@@ -1,5 +1,6 @@
 <?php
     $db=db_connect();//If we have this here we don't need to call db_connect() in the pages php files
+    //Luyanda Test
 ?>
 <!DOCTYPE html>
 <html lang="en">
