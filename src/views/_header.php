@@ -12,10 +12,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/app.css">
     <script src="https://kit.fontawesome.com/5f4f01cc86.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="images/png" href="<?=asset_url('images/logo.png')?>"></link>
+    <Title>Food Palace</Title>
 </head>
-<Title>Food Palace</Title>
-
-
 
 <body>
     <div class="header">
