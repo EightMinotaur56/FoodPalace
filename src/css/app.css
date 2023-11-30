@@ -10,6 +10,20 @@ ul *{
     list-style-type: none;
 }
 
+img{
+    width: 200px;
+    height: 200px;
+    resize: both;
+    display: flex;
+    width: 220px;
+    height: 270px;
+    border: #000000;
+    color:black;
+    margin-left: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
 .container{
     background-image: url('../images/tablesAndChairs.jpg');
     background-size: cover;
@@ -452,17 +466,6 @@ ul *{
 .vegan .content :nth-child(5){
     background-image: url('../images/sesameNoodles.jpg');
     background-size: cover;
-}
-
-.vegan .image{
-    display: flex;
-    width: 220px;
-    height: 270px;
-    border: #000000;
-    color:black;
-    margin-left: 60px;
-    justify-content: center;
-    align-items: center;
 }
 /*#endregion vegan*/
 

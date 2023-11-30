@@ -5,7 +5,7 @@
     <h1>VEGAN CATEGORY</h1>
     <div class="content">
         <?php foreach($vegans as $vegan):?>
-            <div class="image"></div>
+            <img src="<?=$vegan['imageURL']?>" alt="">
         <?php endforeach;?>
     </div>
 </div>

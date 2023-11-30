@@ -7,20 +7,23 @@ VIEW `menu` AS
         `m`.`id` AS `id`,
         `m`.`name` AS `name`,
         `m`.`description` AS `description`,
-        `m`.`cost` AS `cost`
+        `m`.`cost` AS `cost`,
+        `m`.`imageURL` AS `imageURL`
     FROM
         `main` `m` 
     UNION SELECT DISTINCT
         `v`.`id` AS `id`,
         `v`.`name` AS `name`,
         `v`.`description` AS `description`,
-        `v`.`cost` AS `cost`
+        `v`.`cost` AS `cost`,
+        `v`.`imageURL` AS `imageURL`
     FROM
         `vegan` `v` 
     UNION SELECT DISTINCT
         `d`.`id` AS `id`,
         `d`.`name` AS `name`,
         `d`.`description` AS `description`,
-        `d`.`cost` AS `cost`
+        `d`.`cost` AS `cost`,
+        `d`.`imageURL` AS `imageURL`
     FROM
         `desserts` `d`
