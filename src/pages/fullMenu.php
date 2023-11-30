@@ -8,4 +8,3 @@
             <img src="<?= asset_url($item['imageURL'])?>" alt="">
         <?php endforeach;?>
     </div>
-</div>

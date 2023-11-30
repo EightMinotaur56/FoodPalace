@@ -8,4 +8,3 @@
             <img src="<?=$vegan['imageURL']?>" alt="">
         <?php endforeach;?>
     </div>
-</div>

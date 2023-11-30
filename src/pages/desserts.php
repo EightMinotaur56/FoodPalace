@@ -8,4 +8,4 @@
             <img src="<?=$dessert['imageURL']?>" alt="">
         <?php endforeach;?>
     </div>
-</div>
+    

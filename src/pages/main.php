@@ -8,4 +8,4 @@
             <img src="<?=$main['imageURL']?>" alt="">
         <?php endforeach;?>
     </div>
-</div>
+    
