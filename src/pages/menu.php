@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    $query = $_SERVER['QUERY_STRING'];
+    if($query){
+        $_SESSION['current_page']=$query;
+    }
+    
+?>
 <div class="menu">
     <h1>OUR MENU</h1>
     <div class="content">

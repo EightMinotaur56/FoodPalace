@@ -1,5 +1,11 @@
 <?php
     $menuItems=getMenu($db);
+    session_start();
+    $previousPage=$_SESSION['current_page'];
+    $query = $_SERVER['QUERY_STRING'];
+    if($query){
+        $_SESSION['current_page']=$query;
+    }
 ?>
 <div class="fullMenu">
     <h1>Menu</h1>
