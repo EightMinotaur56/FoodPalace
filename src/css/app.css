@@ -567,27 +567,77 @@ img{
 
 
 /*#region footer*/
-.footerNavButton{
+.footerNavButtonFirst{
     position: relative;
     display: inline-block;
     top: 30px;
     width: 230px;
     background-color: #fff;
-    font-size: 100%;
     padding: 6px 13px;
-    border-radius: 200px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
     box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
     border: black solid 2px;
     transition: .3s ease-in-out;
     text-decoration: none;
     color: var(--darkRed);
     font-family: Poppins;
-    font-size: 32px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
 }
-.footerNavButton:hover{
+.footerNavButton{
+    position: relative;
+    display: inline-block;
+    top: 30px;
+    width: 230px;
+    background-color: #fff;
+    padding: 6px 13px;
+    box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
+    border: black solid 2px;
+    transition: .3s ease-in-out;
+    text-decoration: none;
+    color: var(--darkRed);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.footerNavButtonLast{
+    position: relative;
+    display: inline-block;
+    top: 30px;
+    width: 230px;
+    background-color: #fff;
+    padding: 6px 13px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
+    border: black solid 2px;
+    transition: .3s ease-in-out;
+    text-decoration: none;
+    color: var(--darkRed);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+button.footerNavButtonFirst:hover{
+    transform: translateY(-2px);
+    background-color: #fff;
+    color: var(--darkRed);
+    background-color: var(--yellow);
+}
+button.footerNavButton:hover{
+    transform: translateY(-2px);
+    background-color: #fff;
+    color: var(--darkRed);
+    background-color: var(--yellow);
+}
+button.footerNavButtonLast:hover{
     transform: translateY(-2px);
     background-color: #fff;
     color: var(--darkRed);
