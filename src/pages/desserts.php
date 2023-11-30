@@ -5,7 +5,7 @@
     <h1>DESSERTS</h1>
     <div class="content">
         <?php foreach($desserts as $dessert):?>
-            <div class="image"></div>
+            <img src="<?=$dessert['imageURL']?>" alt="">
         <?php endforeach;?>
     </div>
 </div>

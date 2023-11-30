@@ -446,27 +446,6 @@ img{
     justify-items: center;
     align-items: center;
 }
-
-.vegan .content :first-child {
-    background-image: url('../images/falafel.png');
-    background-size: cover;
-}
-.vegan .content :nth-child(2){
-    background-image: url('../images/avocadoBroccoli.jpg');
-    background-size: cover;
-}
-.vegan .content :nth-child(3){
-    background-image: url('../images/salad.jpg');
-    background-size: cover;
-}
-.vegan .content :nth-child(4){
-    background-image: url('../images/veganBurger.jpg');
-    background-size: cover;
-}
-.vegan .content :nth-child(5){
-    background-image: url('../images/sesameNoodles.jpg');
-    background-size: cover;
-}
 /*#endregion vegan*/
 
 /*#region main*/
@@ -495,27 +474,6 @@ img{
     flex-direction: row;
     justify-items: center;
     align-items: center;
-}
-
-.main .content :first-child {
-    background-image: url('../images/mainCourse.jpg');
-    background-size: cover;
-}
-.main .content :nth-child(2){
-    background-image: url('../images/cevap.jpg');
-    background-size: cover;
-}
-.main .content :nth-child(3){
-    background-image: url('../images/burger.jpg');
-    background-size: cover;
-}
-.main .content :nth-child(4){
-    background-image: url('../images/pizza.jpg');
-    background-size: cover;
-}
-.main .content :nth-child(5){
-    background-image: url('../images/steak.jpg');
-    background-size: cover;
 }
 
 .main .image{
@@ -556,27 +514,6 @@ img{
     flex-direction: row;
     justify-items: center;
     align-items: center;
-}
-
-.desserts .content :first-child {
-    background-image: url('../images/tiramisu.jpg');
-    background-size: cover;
-}
-.desserts .content :nth-child(2){
-    background-image: url('../images/cheesecake.jpg');
-    background-size: cover;
-}
-.desserts .content :nth-child(3){
-    background-image: url('../images/brownie.jpg');
-    background-size: cover;
-}
-.desserts .content :nth-child(4){
-    background-image: url('../images/lavaCake.jpg');
-    background-size: cover;
-}
-.desserts .content :nth-child(5){
-    background-image: url('../images/pie.jpg');
-    background-size: cover;
 }
 
 .desserts .image{

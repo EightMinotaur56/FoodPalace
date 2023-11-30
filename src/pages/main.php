@@ -5,7 +5,7 @@
     <h1>MAINS</h1>
     <div class="content">
         <?php foreach($mains as $main):?>
-            <div class="image"></div>
+            <img src="<?=$main['imageURL']?>" alt="">
         <?php endforeach;?>
     </div>
 </div>
