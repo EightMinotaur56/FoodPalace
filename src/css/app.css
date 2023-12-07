@@ -421,8 +421,8 @@ img{
 .reservationsPage .box .interior input.name {
     font-size: medium;
     font-family:Poppins;
-    width: 100px;
-    height:0;
+    width: 200px;
+    height:50px;
     padding-left: 50px;
     
  
