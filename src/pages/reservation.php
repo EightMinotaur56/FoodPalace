@@ -36,20 +36,20 @@
         <div class="box">
             <div class="interior">
                 <form method="post">
-                    <div class="box">
+                    <div class="name">
                         <input type="text" name="clientName" value="<?= $clientName?>" placeholder="Name">
                     </div>
-                    <div class="box">
+                    <div class="name">
                         <input type="text" name="clientPhone" value="<?= $clientPhone?>" placeholder="Phone Number">
                     </div>
-                    <div class="box">
+                    <div class="name">
                         <label for="partySize">How many guests?</label>
                         <input type="number" name="partySize" value="<?= $partySize?>" placeholder="1">
                     </div>
-                    <div class="box">
+                    <div class="name">
                         <input type="date" name="reservationDate" value="<?= $reservationDate?>">
                     </div>
-                    <div class="box">
+                    <div class="name">
                         <select name="time" style="min-width:200px">
                             <option value=""></option>
                             <option value="12:00">12:00</option>
