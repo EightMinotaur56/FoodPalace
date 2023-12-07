@@ -429,7 +429,7 @@ img{
  }
  .reservationPage.box.interior.name {
     margin-bottom: 15px;
-    flex: 1 1 40rem;
+    flex:auto;
     height:0;
     width:899px;
     left: 270px;
