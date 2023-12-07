@@ -432,14 +432,11 @@ img{
     width: 100px;
     height: 50px;
     -ms-flex-align: center;
-    
+
  }
- .reservationPage.box.interior.box-sizing.name {
+ .reservationPage.box.interior.name {
     margin-bottom: 15px;
-    flex:auto;
-    height:80px;
-    width:100px;
- box-sizing: 1;
+    
 }
 
 
