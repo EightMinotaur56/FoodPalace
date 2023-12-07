@@ -431,8 +431,8 @@ img{
     margin-bottom: 15px;
     flex:auto;
     height:80px;
-    width:250px;
-
+    width:100px;
+ box-sizing: 1;
 }
 
 
