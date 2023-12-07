@@ -1,0 +1,6 @@
+"id";"name";"description";"imageURL";"cost"
+"d1";"Tiramisu";"Traditional tiramisu";"./images/tiramisu.jpg";4.99
+"d2";"Strawberry Cheesecake";"Traditional strawberry cheesecake";"./images/cheesecake.jpg";6.99
+"d3";"Brownie";"Delicious chocolate brownie with vanilla ice cream, nuts, and chocolate and caramel sauce";"./images/brownie.jpg";5.99
+"d4";"Lava Cake";"Delecious lava cake with melting chocolate in the middle topped with vanilla ice cream";"./images/lavaCake.jpg";3.99
+"d5";"Apple Pie";"Traditional apple pie with vanilla ice cream";"./images/pie.jpg";3.99

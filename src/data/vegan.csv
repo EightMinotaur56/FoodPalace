@@ -1,0 +1,6 @@
+"id";"name";"description";"imageURL";"cost"
+"v1";"Falafel";"Falafel with tometoes, lettuce, and olives";"./images/falafel.png";10.95
+"v2";"Avocado Salad";"Delicious salad with avocadoes, beans, and broccoli";"./images/avocadoBroccoli.jpg";14.99
+"v3";"Fresh Salad";"Fresh salad with tomatoes, avocado, and vegan cottage cheese";"./images/salad.jpg";8.95
+"v4";"Vegan Burger";"A traditional vegan burger";"./images/veganBurger.jpg";15.95
+"v5";"Sesame Noodles";"Delicious noodles";"./images/sesameNoodles.jpg";12.95

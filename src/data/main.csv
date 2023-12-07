@@ -1,0 +1,6 @@
+"id";"name";"description";"imageURL";"cost"
+"m1";"Shashlik";"3 shashlik skewers with french fries, tomatoes, and onions on the side";"./images/mainCourse.jpg";14.99
+"m2";"Æevapi";"Tradition balkan Æevapi with ajvar, kajmka, onions, and pita bread";"./images/cevap.jpg";10.95
+"m3";"Beef Burger";"Traditional burger with lettuce, tomatoes, cheese, beef patty, and french fries";"./images/burger.jpg";12.55
+"m4";"Margherita Pizza";"Traditioan margherita pizza with pizza sauce, mozzarella, and basil";"./images/pizza.jpg";7.99
+"m5";"Steak";"Steak with french fries and Jack Daniel's BBQ sauce";"./images/steak.jpg";24.99
