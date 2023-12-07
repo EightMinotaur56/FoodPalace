@@ -36,11 +36,11 @@
         <div class="box">
             <div class="interior">
                 <form method="post">
-                    <div class="name">
-                        <input type="text" name="clientName" value="<?= $clientName?>" placeholder="Name">
+                    <div >
+                        <input class="name" type="text" name="clientName" value="<?= $clientName?>" placeholder="Name">
                     </div>
-                    <div class="name">
-                        <input type="text" name="clientPhone" value="<?= $clientPhone?>" placeholder="Phone Number">
+                    <div >
+                        <input class="name" type="text" name="clientPhone" value="<?= $clientPhone?>" placeholder="Phone Number">
                     </div>
                     <div >
                         <label for="partySize">How many guests?</label>
