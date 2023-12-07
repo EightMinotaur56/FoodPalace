@@ -417,6 +417,14 @@ img{
 .reservationsPage .box .interiorResult h2{
     font-size: 200%;
 }
+.reservationsPage .box .interior input.name {
+    font-size: medium;
+    font-family:Poppins;
+    width: 100px;
+    height: 100px;
+    
+ 
+ }
 /*#endregion Reservation Pages*/
 
 
