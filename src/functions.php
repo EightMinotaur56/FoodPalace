@@ -20,12 +20,12 @@ function dd($var)
 
 function page_url($page)
 {
-    return BASE_URL . '?page=' . $page;
+    return BASE_URL.':8080/' . '?page=' . $page;
 }
 
 function asset_url($asset)
 {
-    return BASE_URL . $asset;
+    return BASE_URL .':8080/' . $asset;
 }
 
 function is_post()
