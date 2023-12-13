@@ -403,6 +403,7 @@ img{
     background-color: var(--yellow);
 }
 
+.reservation.box.interior.name
 .reservationsPage .box .interiorResult{
     display: flex;
     flex-direction: column;
@@ -420,11 +421,18 @@ img{
 .reservationsPage .box .interior input.name {
     font-size: medium;
     font-family:Poppins;
-    width: 100px;
-    height: 100px;
-    
+    width: 200px;
+    height:50px;
+    padding-left: 50px;
+    padding-top: 50px;
  
  }
+ 
+
+
+
+
+ 
 /*#endregion Reservation Pages*/
 
 
