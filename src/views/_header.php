@@ -27,11 +27,13 @@
                 </ul>
             </div>
             <div class="navigation">
-                <ul>
+                <div class="nav"><ul>
                     <li><a href="<?php echo page_url('home'); ?>">Home</a></li>
                     <li><a href="<?= page_url('contact'); ?>">Contact</a></li>
-                </ul>
+                </ul></div>
+                <div class="btn">
                 <button type="button" class="reservation"><a href="<?= page_url('reservation'); ?>" role="button">Reservation</a></button>
+                </div>
             </div>
         </div>
     </div>
