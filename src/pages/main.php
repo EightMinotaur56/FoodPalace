@@ -8,7 +8,7 @@
     }
 ?>
 <div class="main">
-    <h1>MAINS</h1>
+    <h1>MAINS COURSE</h1>
     <div class="content">
         <?php foreach($mains as $main):?>
             <img src="<?=$main['imageURL']?>" alt="">

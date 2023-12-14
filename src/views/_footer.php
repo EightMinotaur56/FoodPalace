@@ -23,8 +23,8 @@
     }
 ?>
 <?php if($page==='vegan'|| $page==='desserts'||$page==='main'||$page==='fullMenu'):?>
-    <div>
-    <div style="display: flex;flex-driection:column;">
+    <div class="outerBtn">
+    <div class="btnWrap" style="display: flex;flex-driection:column;">
     <?php if($previous!=='menu'):?>
     <a href="<?=page_url('menu')?>"><button type="button" class='footerNavButtonFirst' style="width:max-content">Menu Category Seletion</button></a>
     <?php endif;?>
