@@ -47,11 +47,14 @@ img{
 }
 
 .header .content{
-    position: relative;
+    .header .content{
+    width: 80%;
+    height: 80px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    max-height: 110px;
+    flex-direction: row;
+    margin: 0 auto;
+}
 }
 
 .logo{
