@@ -1,26 +1,26 @@
 <?php
-   $errors=[];
+   /*$errors=[];
     $clientName=$_POST['clientName']??null;
     $clientPhone=$_POST['clientPhone']??null;
     $partySize=$_POST['partySize']??null;
     $reservationDate=$_POST['reservationDate']??null;
-    $time=$_POST['time']??null;
+    $time=$_POST['time']??null;*/
 
 
-    /*if (isset($_POST['reserve'])) {
-        $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
-        $phone = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
-        $guests = filter_var($_POST['guests'], FILTER_SANITIZE_STRING);
+    if (isset($_POST['reserve'])) {
+        $name = filter_var($_POST['clientName'], FILTER_SANITIZE_STRING);
+        $phone = filter_var($_POST['cientphone'], FILTER_SANITIZE_STRING);
+        $guests = filter_var($_POST['partySize'], FILTER_SANITIZE_STRING);
         $check_in = filter_var($_POST['check_in'], FILTER_SANITIZE_STRING);
         $time = filter_var($_POST['time'], FILTER_SANITIZE_STRING);
       
      
         $total = 0;
-        $check_bookings = $connect->prepare("SELECT * FROM `reservations` WHERE check_in =?");
+        $check_reservations = $connect->prepare("SELECT * FROM `reservations` WHERE reservationDate =?");
      
         try {
-            $check_bookings->execute([$check_in]);
-            while ($fetch_bookings = $check_bookings->fetch(PDO::FETCH_ASSOC)) {
+            $check_reservations->execute([$check_in]);
+            while ($fetch_bookings = $check_reservations->fetch(PDO::FETCH_ASSOC)) {
                 $total += $fetch_bookings['guests'];
             }
         } catch (PDOException $e) {
@@ -40,8 +40,8 @@
                    });
                </script>";
         } else {
-            $verify_bookings = $connect->prepare("SELECT * FROM `reservation` WHERE user_id = ? AND name = ? AND number = ? AND guests = ? AND check_in = ? AND time=?");
-            $verify_bookings->execute([$user_id, $name, $number, $guests, $check_in,  $time]);
+            $verify_bookings = $connect->prepare("SELECT * FROM `reservation` WHERE id = ? AND clientName = ? AND clientNumber = ? AND partySize = ? AND reservationDate = ? ");
+            $verify_bookings->execute([$id, $name, $number, $guests, $check_in,  $time]);
      
             if ($verify_bookings->rowCount() > 0) {
                 echo "<script>
@@ -54,8 +54,7 @@
                        });
                    </script>";
             } else {
-                $booking_id = create_unique_id(); 
-                $book_room = $connect->prepare("INSERT INTO `reservation` (reservation_id, user_id, name,  number, guests, check_in, time) VALUES (?, ?, ?, ?, ?)");
+                $book_room = $connect->prepare("INSERT INTO `reservation` (clientName,  clientNumber, partySize,reservationDate) VALUES (?, ?, ?, ?)");
                 $book_room->execute([$reservation_id, $user_id, $name,  $number, $guests, $check_in, $time, $adults, $children]);
      
                 echo "<script>
@@ -69,10 +68,10 @@
                    </script>";
             }
         }
-     }*/
+     }
 
 
-    if(is_post()){
+    /*if(is_post()){
         if(!$clientName){
             $errors['clientName'][]="Please give your name";
         }
@@ -94,7 +93,7 @@
 
             addReservation($clientName,$clientPhone,$partySize,$fullDate,$db);
         }
-    }
+    }*/
 ?>
 
 <div class="container">
