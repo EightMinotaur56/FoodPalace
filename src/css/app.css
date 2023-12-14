@@ -570,25 +570,21 @@ img{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .desserts .content{
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-items: center;
     align-items: center;
+    justify-content: space-between;
 }
-
-.desserts .image{
+.desserts .content img {
     display: flex;
-    width: 220px;
-    height: 270px;
-    border: #000000;
-    color:black;
-    margin-left: 60px;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
 }
 /*#endregion desserts*/
 
