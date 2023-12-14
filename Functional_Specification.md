@@ -18,22 +18,22 @@
 - Reservation Page
   On this page a user can add a reservation to the restaurant
 - Menu
-  This pages shows the different menu categories the restaurant offers
+  This pages shows the different menu categories the restaurant offers and the prices 
 - Vegan
-  This page contains the vegan food options
+  This page contains the vegan food options and the prices
 - Main
-  This page contains the main course dishes
+  This page contains the main course dishes 
 - Desserts
-  This page contains the desserts
+  This page contains the desserts 
 - Complete Menu
-  This page lists all the food on the menu
+  This page lists all the food on the menu abd the price of each meal.
 
 ## User Interface (UI) for creating a reservation and looking at the restaurants menu
 - Create an engaging and interactive user interface.
 - Ensure easy navigation and provide clear instructions.
 
 ## Database Integration
-- Integrate with a database to add and get reservations
+- Integrate with a database to add and get reservations with the users name ,phone number ,time for reservation and the reservation date.
 - Intergrate with a contact database where we can interact with user's messages
 
 ## Design and Layout
@@ -47,14 +47,14 @@
 - Optimize the application's code and data transfer processes for efficient operation, reducing load times and resource consumption.
 
 ## Documentation
-- Provide user instructions and any necessary documentation.
+- Provide user instructions and any necessary documentation. The website is user friendly with clear instructions-
 
 ## Timeline
 - Project milestones and delivery dates.
 
 ## Technology Stack
 - Front-end: HTML, CSS, and php will be used to build the user interface and enhance interactivity.
-- Back-end: mysql databse using php PDO
+- Back-end: mysql databse using php PDO to store and update data.
 
 
 
