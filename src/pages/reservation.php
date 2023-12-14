@@ -6,7 +6,7 @@
     $reservationDate=$_POST['reservationDate']??null;
     $time=$_POST['time']??null;
 
-    if(is_post()){
+    /*if(is_post()){
         if(!$clientName){
             $errors['clientName'][]="Please give your name";
         }
@@ -28,7 +28,7 @@
 
             addReservation($clientName,$clientPhone,$partySize,$fullDate,$db);
         }
-    }
+    }*/
 ?>
 
 
