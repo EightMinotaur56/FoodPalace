@@ -1,31 +1,107 @@
 <?php
-    $errors=[];
+   $errors=[];
     $clientName=$_POST['clientName']??null;
     $clientPhone=$_POST['clientPhone']??null;
     $partySize=$_POST['partySize']??null;
     $reservationDate=$_POST['reservationDate']??null;
     $time=$_POST['time']??null;
 
+
+    /*if (isset($_POST['reserve'])) {
+=======
+
+/*
+    if (isset($_POST['reserve'])) {
+>>>>>>> Stashed changes
+        $name = filter_var($_POST['clientName'], FILTER_SANITIZE_STRING);
+        $phone = filter_var($_POST['cientphone'], FILTER_SANITIZE_STRING);
+        $guests = filter_var($_POST['partySize'], FILTER_SANITIZE_STRING);
+        $reservationDate = filter_var($_POST['check_in'], FILTER_SANITIZE_STRING);
+        $time = filter_var($_POST['time'], FILTER_SANITIZE_STRING);
+      
+     
+        $total = 0;
+        $check_reservations = $connect->prepare("SELECT * FROM `reservations` WHERE reservationDate =?");
+     
+        try {
+            $check_reservations->execute([$check_in]);
+            while ($fetch_bookings = $check_reservations->fetch(PDO::FETCH_ASSOC)) {
+                $total += $fetch_bookings['guests'];
+            }
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
+     
+        echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@10'></script>";
+     
+        if ($total >= 20) {
+            echo "<script>
+                   document.addEventListener('DOMContentLoaded', function() {
+                       Swal.fire({
+                           icon: 'warning',
+                           title: 'No tables Available',
+                           text: 'We have no tables available.',
+                       });
+                   });
+               </script>";
+        } else {
+            $verify_bookings = $connect->prepare("SELECT * FROM `reservation` WHERE id = ? AND clientName = ? AND clientNumber = ? AND partySize = ? AND reservationDate = ? ");
+            $verify_bookings->execute([$id, $name, $number, $guests, $check_in,  $time]);
+     
+            if ($verify_bookings->rowCount() > 0) {
+                echo "<script>
+                       document.addEventListener('DOMContentLoaded', function() {
+                           Swal.fire({
+                               icon: 'warning',
+                               title: 'Reservation Error',
+                               text: 'You already have a reservation with these details.',
+                           });
+                       });
+                   </script>";
+            } else {
+                $book_room = $connect->prepare("INSERT INTO `reservation` (clientName,  clientNumber, partySize,reservationDate) VALUES (?, ?, ?, ?)");
+                $book_room->execute([$reservation_id, $user_id, $name,  $number, $guests, $check_in, $time]);
+     
+                echo "<script>
+                       document.addEventListener('DOMContentLoaded', function() {
+                           Swal.fire({
+                               icon: 'success',
+                               title: 'Room successfully booked',
+                               text: 'Room successfully booked.',
+                           });
+                       });
+                   </script>";
+            }
+        }
+     }*/
+
+
     if(is_post()){
+        echo "<script>console.log('test')</script>";
         if(!$clientName){
             $errors['clientName'][]="Please give your name";
         }
         if(!$clientPhone){
-            $errors['clientName'][]="Please give a phone number we can contact you with";
+            $errors['clientPhone'][]="Please give a phone number we can contact you with";
         }
         if(!$partySize){
-            $errors['clientName'][]="Please the size of your party";
+            $errors['partySize'][]="Please the size of your party";
         }
         if(!$reservationDate){
-            $errors['clientName'][]="Please choose a date";
+            $errors['reservationDate'][]="Please choose a date";
         }
         if(!$time){
-            $errors['clientName'][]="Please choose a time";
+            $errors['time'][]="Please choose a time";
+        }
+        echo "<script>console.log('After if statements')</script>";
+
+        foreach($errors as $error){
+            dd($error);
         }
 
         if(count($errors)===0){
+            echo "<script>console.log('errors = 0')</script>";
             $fullDate=$reservationDate.' '.$time;
-
             addReservation($clientName,$clientPhone,$partySize,$fullDate,$db);
         }
     }
@@ -33,24 +109,35 @@
 
 <div class="container">
     <div class="reservationsPage">
-        <div class="box">
-            <div class="interior">
-                <form method="post">
-                    <div class="box-sizing" >
-                        <input class="name" type="text" name="clientName" value="<?= $clientName?>" placeholder="Name">
+    <div class="boxes">
+            <div class="interior"> 
+    <section class="reservation" id="reservation">
+    <form method="post">
+      <h3>make a reservation</h3>
+      <div class="flex">
+         <div class="box">
+            <p>your name <span>*</span></p>
+            <input type="text" name="clientName" maxlength="40" required placeholder="enter your name" class="input" value="<?=$clientName;?>">
+         </div>
+        
+         <div class="box">
+            <p>your number  <span>*</span></p>
+            <input type="text" name="clientPhone" maxlength="10" min="0" max="9999999999" required placeholder="enter your number" class="input" value="<?=$clientPhone;?>">
+         </div>
+        
+         
+         <div class="box">
+            <p>check-in <span>*</span></p>
+            <input type="date" name="reservationDate" class="input" required value="<?=$reservationDate;?>">
+         </div>
+         <div class="box" >
+                        <p>How many guests? <style></style></p>
+                        <input type="number" name="partySize" value="<?= $partySize?>" placeholder="0" value="<?=$partySize;?>">
                     </div>
-                    <div class="box-sizing">
-                        <input class="name" type="text" name="clientPhone" value="<?= $clientPhone?>" placeholder="Phone Number">
-                    </div>
-                    <div >
-                        <label for="partySize">How many guests?</label>
-                        <input type="number" name="partySize" value="<?= $partySize?>" placeholder="1">
-                    </div>
-                    <div >
-                        <input type="date" name="reservationDate" value="<?= $reservationDate?>">
-                    </div>
-                    <div >
-                        <select name="time" style="min-width:200px">
+         </div>
+         <div class="box">
+            <p>time <span>*</span></p>
+            <select name="time" class="input"  required value="<?=$time;?>">
                             <option value=""></option>
                             <option value="12:00">12:00</option>
                             <option value="12:30">12:30</option>
@@ -74,14 +161,19 @@
                             <option value="21:30">21:30</option>
                             <option value="22:00">22:00</option>
                         </select>
-                    </div>
-                    <div>
-                        <button 
-                        class="submitButton"
-                        type="submit">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+         </div>
+      </div>
+      <button type="submit" class="btn">Reserve</button>
+   </form>
+
+</section>
 </div>
+        </div>
+</div>
+</div>
+
+
+
+
+
+

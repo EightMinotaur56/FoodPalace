@@ -11,7 +11,14 @@
     <h1>DESSERTS</h1>
     <div class="content">
         <?php foreach($desserts as $dessert):?>
-            <img src="<?=$dessert['imageURL']?>" alt="">
+            <div class="box">
+                <img src="<?=$dessert['imageURL']?>" alt="">
+                <?php echo $dessert['name']; ?>
+                <h6 style="margin-top:10px;margin-bottom:10px; max-width:270px;">
+                    <?php echo wordwrap($dessert['description'],20,"<br>");?>
+                </h6>
+                <?php echo '$'.$dessert['cost']; ?>
+            </div>
         <?php endforeach;?>
     </div>
     
