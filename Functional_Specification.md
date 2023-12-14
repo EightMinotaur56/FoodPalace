@@ -34,6 +34,7 @@
 
 ## Databas Integration
 - Integrate with a database to add and get reservations
+- Intergrate with a contact database where we can interact with user's messages
 
 ## Design and Layout
 - Develop a visually appealing design with intuitive layouts to enhance the user experience.
