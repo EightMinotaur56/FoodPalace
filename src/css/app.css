@@ -312,6 +312,26 @@ contact-container {
 .contact-left span {
     font-weight: 400;
 }
+.contact-info {
+    text-align: center;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 80px;
+}
+.contact-info h2 {
+    font-size: 24px;
+}
+.contact-left p {
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
 
 
 
