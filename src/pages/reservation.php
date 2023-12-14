@@ -33,9 +33,10 @@
 
 <div class="container">
     <div class="reservationsPage">
-   <section class="reservation" id="reservation">
-
-   <form action="" method="post">
+    <div class="boxes">
+            <div class="interior"> 
+    <section class="reservation" id="reservation">
+    <form action="" method="post">
       <h3>make a reservation</h3>
       <div class="flex">
          <div class="box">
@@ -88,7 +89,8 @@
    </form>
 
 </section>
-
+</div>
+        </div>
 </div>
 </div>
 
