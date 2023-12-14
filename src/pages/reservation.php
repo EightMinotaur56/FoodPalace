@@ -31,26 +31,33 @@
     }
 ?>
 
-<div class="container">
-    <div class="reservationsPage">
-        <div class="box">
-            <div class="interior">
-                <form method="post">
-                    <div class="box-sizing" >
-                        <input class="name" type="text" name="clientName" value="<?= $clientName?>" placeholder="Name">
-                    </div>
-                    <div class="box-sizing">
-                        <input class="name" type="text" name="clientPhone" value="<?= $clientPhone?>" placeholder="Phone Number">
-                    </div>
-                    <div >
-                        <label for="partySize">How many guests?</label>
-                        <input type="number" name="partySize" value="<?= $partySize?>" placeholder="1">
-                    </div>
-                    <div >
-                        <input type="date" name="reservationDate" value="<?= $reservationDate?>">
-                    </div>
-                    <div >
-                        <select name="time" style="min-width:200px">
+
+<section class="reservation" id="reservation">
+
+   <form action="" method="post">
+      <h3>make a reservation</h3>
+      <div class="flex">
+         <div class="box">
+            <p>your name <span>*</span></p>
+            <input type="text" name="name" maxlength="50" required placeholder="enter your name" class="input">
+         </div>
+         <div class="box">
+            <p>your email <span>*</span></p>
+            <input type="email" name="email" maxlength="50" required placeholder="enter your email" class="input">
+         </div>
+         <div class="box">
+            <p>your number <span>*</span></p>
+            <input type="number" name="number" maxlength="10" min="0" max="9999999999" required placeholder="enter your number" class="input">
+         </div>
+         
+         </div>
+         <div class="box">
+            <p>check-in <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>time <span>*</span></p>
+            <select name="time" class="input"  required>
                             <option value=""></option>
                             <option value="12:00">12:00</option>
                             <option value="12:30">12:30</option>
@@ -74,14 +81,17 @@
                             <option value="21:30">21:30</option>
                             <option value="22:00">22:00</option>
                         </select>
-                    </div>
-                    <div>
-                        <button 
-                        class="submitButton"
-                        type="submit">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+         </div>
+      </div>
+      <input type="submit" value="book now" name="submit" class="btn">
+   </form>
+
+</section>
+
+
+
+
+
+
+
+
