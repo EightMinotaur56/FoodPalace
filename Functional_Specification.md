@@ -33,7 +33,7 @@
 - Ensure easy navigation and provide clear instructions.
 
 ## Database Integration
-- Integrate with a database to add and get reservations
+- Integrate with a database to add and get reservations with the users name ,phone number ,time for reservation and the reservation date.
 - Intergrate with a contact database where we can interact with user's messages
 
 ## Design and Layout
