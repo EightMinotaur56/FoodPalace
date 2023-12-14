@@ -508,8 +508,10 @@ img{
 .vegan .content .box{
     margin: 0 auto;
     min-width: fit-content;
+    max-width: 270px;
     display: block;
     font-weight: bold;
+    font-size: 25px;
 }
 /*#endregion vegan*/
 
@@ -543,6 +545,14 @@ img{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+.main .content .box{
+    margin: 0 auto;
+    min-width: fit-content;
+    max-width: 270px;
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
 }
 .main .content img {
     display: flex;
@@ -581,6 +591,14 @@ img{
     align-items: center;
     justify-content: space-between;
 }
+.desserts .content .box{
+    margin: 0 auto;
+    min-width: fit-content;
+    max-width: 270px;
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+}
 .desserts .content img {
     display: flex;
     margin: 0 auto;
@@ -605,6 +623,15 @@ img{
     flex-direction: row;
     justify-items: center;
     align-items: center;
+}
+
+.fullMenu .content .box{
+    margin-left: 20px;
+    margin-bottom: 50px;
+    min-width: fit-content;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .fullMenu .content img{

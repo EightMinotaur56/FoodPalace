@@ -11,7 +11,14 @@
     <h1>MAINS</h1>
     <div class="content">
         <?php foreach($mains as $main):?>
-            <img src="<?=$main['imageURL']?>" alt="">
+            <div class="box">
+                <img src="<?=$main['imageURL']?>" alt="">
+                <?php echo $main['name']; ?>
+                <h6 style="margin-top:10px;margin-bottom:10px; max-width:270px;">
+                    <?php echo wordwrap($main['description'],20,"<br>");?>
+                </h6>
+                <?php echo '$'.$main['cost']; ?>
+            </div>
         <?php endforeach;?>
     </div>
     
