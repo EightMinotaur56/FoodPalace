@@ -297,6 +297,22 @@ img{
 
 
 /*#region Contact*/
+contact-container {
+    display: flex;
+    height: calc(100vh - 80px);
+
+}
+
+.contact-left {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    margin-right: 30px;
+}
+.contact-left span {
+    font-weight: 400;
+}
+
 
 
 
