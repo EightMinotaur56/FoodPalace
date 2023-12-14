@@ -331,6 +331,25 @@ contact-container {
     font-weight: bold;
     margin-bottom: 20px;
 }
+contact-left .days h4{
+    font-size: 14px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: flex-start;
+    height: 30px;
+}
+
+.opening-hours {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.contact-form {
+    margin-top: 50px;
+
+}
+
 
 
 
