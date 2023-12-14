@@ -1,13 +1,13 @@
 <?php
-   /* $errors=[];
+   $errors=[];
     $clientName=$_POST['clientName']??null;
     $clientPhone=$_POST['clientPhone']??null;
     $partySize=$_POST['partySize']??null;
     $reservationDate=$_POST['reservationDate']??null;
-    $time=$_POST['time']??null;*/
+    $time=$_POST['time']??null;
 
 
-    if (isset($_POST['reserve'])) {
+    /*if (isset($_POST['reserve'])) {
         $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
         $phone = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
         $guests = filter_var($_POST['guests'], FILTER_SANITIZE_STRING);
@@ -69,10 +69,10 @@
                    </script>";
             }
         }
-     }
+     }*/
 
 
-    /*if(is_post()){
+    if(is_post()){
         if(!$clientName){
             $errors['clientName'][]="Please give your name";
         }
@@ -94,7 +94,7 @@
 
             addReservation($clientName,$clientPhone,$partySize,$fullDate,$db);
         }
-    }*/
+    }
 ?>
 
 <div class="container">
@@ -114,14 +114,16 @@
             <p>your number  <span>*</span></p>
             <input type="number" name="number" maxlength="10" min="0" max="9999999999" required placeholder="enter your number" class="input">
          </div>
-         <div class="box" >
-                        <p>How many guests? <style></style></p>
-                        <input type="number" name="guests" value="<?= $partySize?>" placeholder="1">
-                    </div>
+        
          </div>
          <div class="box">
             <p>check-in <span>*</span></p>
             <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box" >
+                        <p>How many guests? <style></style></p>
+                        <input type="number" name="guests" value="<?= $partySize?>" placeholder="1">
+                    </div>
          </div>
          <div class="box">
             <p>time <span>*</span></p>
