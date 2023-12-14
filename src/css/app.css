@@ -354,7 +354,7 @@ img{
     bottom: 0;
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height:0;
 
 
 }
@@ -383,14 +383,14 @@ img{
 .reservationsPage .boxes.reservation form{
     border: var(--border);
     padding: 2rem;
-    height:1000px;
+    height:800px;
     padding-bottom: 10px;
  }
  
  .reservation form .flex{
     display: flex;
     flex-wrap: wrap;
-    gap: 0rem;
+    gap: 1rem;
  }
  
  .reservation form h3{
@@ -405,7 +405,7 @@ img{
  }
  
  .reservation form .flex .box{
-    flex: 1 1 23rem;
+    flex: 1 1 30rem;
  }
  
  .reservation form .flex .box p{
@@ -459,7 +459,7 @@ img{
     text-decoration: none;
     color: var(--darkRed);
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
