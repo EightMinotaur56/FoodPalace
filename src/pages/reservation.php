@@ -31,8 +31,9 @@
     }*/
 ?>
 
-
-<section class="reservation" id="reservation">
+<div class="container">
+    <div class="reservationsPage">
+   <section class="reservation" id="reservation">
 
    <form action="" method="post">
       <h3>make a reservation</h3>
@@ -88,7 +89,8 @@
 
 </section>
 
-
+</div>
+</div>
 
 
 
