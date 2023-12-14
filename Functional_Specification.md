@@ -32,7 +32,7 @@
 - Create an engaging and interactive user interface.
 - Ensure easy navigation and provide clear instructions.
 
-## Databas Integration
+## Database Integration
 - Integrate with a database to add and get reservations
 - Intergrate with a contact database where we can interact with user's messages
 
