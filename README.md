@@ -1,2 +1,2 @@
 # RestaurantProject
-Trello Link: https://www.figma.com/file/ZYx0vfNCykTalF5bgYtwNa/Food-Palace
+Trello Link: https://trello.com/b/szQ1DEcW/food-palace
