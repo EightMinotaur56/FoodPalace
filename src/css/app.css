@@ -343,8 +343,8 @@ img{
 /*#region Reservation Pages*/
 
 .containers{
-    
-    background-size:  1200px;
+    background-image: url('../images/tablesAndChairs.jpg');
+    background-size:  cover;
     position: absolute;
     top: var(--topSpacing);
     left: 0;
