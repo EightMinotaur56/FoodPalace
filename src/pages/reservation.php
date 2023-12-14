@@ -115,7 +115,7 @@
             <input type="number" name="number" maxlength="10" min="0" max="9999999999" required placeholder="enter your number" class="input">
          </div>
         
-         </div>
+         
          <div class="box">
             <p>check-in <span>*</span></p>
             <input type="date" name="check_in" class="input" required>
