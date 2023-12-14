@@ -77,25 +77,31 @@
 
 
     if(is_post()){
+        echo "<script>console.log('test')</script>";
         if(!$clientName){
             $errors['clientName'][]="Please give your name";
         }
         if(!$clientPhone){
-            $errors['clientName'][]="Please give a phone number we can contact you with";
+            $errors['clientPhone'][]="Please give a phone number we can contact you with";
         }
         if(!$partySize){
-            $errors['clientName'][]="Please the size of your party";
+            $errors['partySize'][]="Please the size of your party";
         }
         if(!$reservationDate){
-            $errors['clientName'][]="Please choose a date";
+            $errors['reservationDate'][]="Please choose a date";
         }
         if(!$time){
-            $errors['clientName'][]="Please choose a time";
+            $errors['time'][]="Please choose a time";
+        }
+        echo "<script>console.log('After if statements')</script>";
+
+        foreach($errors as $error){
+            dd($error);
         }
 
         if(count($errors)===0){
+            echo "<script>console.log('errors = 0')</script>";
             $fullDate=$reservationDate.' '.$time;
-
             addReservation($clientName,$clientPhone,$partySize,$fullDate,$db);
         }
     }
@@ -106,32 +112,32 @@
     <div class="boxes">
             <div class="interior"> 
     <section class="reservation" id="reservation">
-    <form action="" method="post">
+    <form method="post">
       <h3>make a reservation</h3>
       <div class="flex">
          <div class="box">
             <p>your name <span>*</span></p>
-            <input type="text" name="clientName" maxlength="40" required placeholder="enter your name" class="input" value="<?=$clientName?>">
+            <input type="text" name="clientName" maxlength="40" required placeholder="enter your name" class="input" value="<?=$clientName;?>">
          </div>
         
          <div class="box">
             <p>your number  <span>*</span></p>
-            <input type="number" name="clientNumber" maxlength="10" min="0" max="9999999999" required placeholder="enter your number" class="input" value="<?=$clientNumber?>">
+            <input type="text" name="clientPhone" maxlength="10" min="0" max="9999999999" required placeholder="enter your number" class="input" value="<?=$clientPhone;?>">
          </div>
         
          
          <div class="box">
             <p>check-in <span>*</span></p>
-            <input type="date" name="reservationDate" class="input" required value="<?=$reservationDate?>">
+            <input type="date" name="reservationDate" class="input" required value="<?=$reservationDate;?>">
          </div>
          <div class="box" >
                         <p>How many guests? <style></style></p>
-                        <input type="number" name="partySize" value="<?= $partySize?>" placeholder="1" value="<?=$partySize?>">
+                        <input type="number" name="partySize" value="<?= $partySize?>" placeholder="0" value="<?=$partySize;?>">
                     </div>
          </div>
          <div class="box">
             <p>time <span>*</span></p>
-            <select name="time" class="input"  required value="<?=$time?>">
+            <select name="time" class="input"  required value="<?=$time;?>">
                             <option value=""></option>
                             <option value="12:00">12:00</option>
                             <option value="12:30">12:30</option>
@@ -157,7 +163,7 @@
                         </select>
          </div>
       </div>
-      <input type="submit" value="reserve" name="reserve" class="btn">
+      <button type="submit" class="btn">Reserve</button>
    </form>
 
 </section>
