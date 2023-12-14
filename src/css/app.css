@@ -349,6 +349,60 @@ contact-left .days h4{
     margin-top: 50px;
 
 }
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid #f9c416;
+}
+
+.contact-form button {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #F9C416;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 180px;
+    border-radius: 43px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon i {
+    color: #F9C416;
+    font-size: 25px;
+}
+
+.icon p {
+    color: #F9C416;
+    margin-top: 5px;
+}
+
+.contact-right {
+    background-image: url('../images/res.jpg');
+    height: 803px;
+    width: 720px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
