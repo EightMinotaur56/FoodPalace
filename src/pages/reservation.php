@@ -11,7 +11,7 @@
         $name = filter_var($_POST['clientName'], FILTER_SANITIZE_STRING);
         $phone = filter_var($_POST['cientphone'], FILTER_SANITIZE_STRING);
         $guests = filter_var($_POST['partySize'], FILTER_SANITIZE_STRING);
-        $check_in = filter_var($_POST['check_in'], FILTER_SANITIZE_STRING);
+        $reservationDate = filter_var($_POST['check_in'], FILTER_SANITIZE_STRING);
         $time = filter_var($_POST['time'], FILTER_SANITIZE_STRING);
       
      
@@ -35,7 +35,7 @@
                        Swal.fire({
                            icon: 'warning',
                            title: 'No tables Available',
-                           text: 'We have no rooms available.',
+                           text: 'We have no tables available.',
                        });
                    });
                </script>";
@@ -48,14 +48,14 @@
                        document.addEventListener('DOMContentLoaded', function() {
                            Swal.fire({
                                icon: 'warning',
-                               title: 'Booking Error',
-                               text: 'You already have a booking with these details.',
+                               title: 'Reservation Error',
+                               text: 'You already have a reservation with these details.',
                            });
                        });
                    </script>";
             } else {
                 $book_room = $connect->prepare("INSERT INTO `reservation` (clientName,  clientNumber, partySize,reservationDate) VALUES (?, ?, ?, ?)");
-                $book_room->execute([$reservation_id, $user_id, $name,  $number, $guests, $check_in, $time, $adults, $children]);
+                $book_room->execute([$reservation_id, $user_id, $name,  $number, $guests, $check_in, $time]);
      
                 echo "<script>
                        document.addEventListener('DOMContentLoaded', function() {
@@ -106,22 +106,22 @@
       <div class="flex">
          <div class="box">
             <p>your name <span>*</span></p>
-            <input type="text" name="name" maxlength="40" required placeholder="enter your name" class="input">
+            <input type="text" name="clientName" maxlength="40" required placeholder="enter your name" class="input">
          </div>
         
          <div class="box">
             <p>your number  <span>*</span></p>
-            <input type="number" name="number" maxlength="10" min="0" max="9999999999" required placeholder="enter your number" class="input">
+            <input type="number" name="clientNumber" maxlength="10" min="0" max="9999999999" required placeholder="enter your number" class="input">
          </div>
         
          
          <div class="box">
             <p>check-in <span>*</span></p>
-            <input type="date" name="check_in" class="input" required>
+            <input type="date" name="reservationDate" class="input" required>
          </div>
          <div class="box" >
                         <p>How many guests? <style></style></p>
-                        <input type="number" name="guests" value="<?= $partySize?>" placeholder="1">
+                        <input type="number" name="partySize" value="<?= $partySize?>" placeholder="1">
                     </div>
          </div>
          <div class="box">
@@ -152,7 +152,7 @@
                         </select>
          </div>
       </div>
-      <input type="submit" value="reserve" name="reserve" class="btn">
+      <input type="reserve" value="reserve" name="reserve" class="btn">
    </form>
 
 </section>
