@@ -428,21 +428,6 @@ img{
  .reservation form .flex .box input[type="date"]::-webkit-calendar-picker-indicator{
     filter: invert(1);
  }
- 
- .reservationsPage .box{
-    min-width: 1065px;
-    max-width: 1065px;
-    min-height: 660px;
-    max-height: 660px;
-    padding-bottom: 3rem;
-    border: #000000;
-    border-radius: 50px;
-    background-color: white;
-    opacity: 78%;
-    color:black;
-    display: flex;
-    justify-content: center;
- }
 
 
 .reservationsPage .box .interior{

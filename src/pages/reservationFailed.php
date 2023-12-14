@@ -1,6 +1,6 @@
 <div class="container">
     <div class="reservationsPage">
-        <div class="box">
+        <div class="boxes">
             <div class="interiorResult">
                 <i class="fa-solid fa-circle-xmark fa-6x"></i>
                 <h1>
