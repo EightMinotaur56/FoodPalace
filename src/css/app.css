@@ -345,6 +345,8 @@ img{
 .containers{
     background-image: url('../images/tablesAndChairs.jpg');
     background-size:  cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     position: absolute;
     top: var(--topSpacing);
     left: 0;
@@ -352,7 +354,9 @@ img{
     bottom: 0;
     display: flex;
     justify-content: center;
-    background-color: #651B1B;
+    height: 100vh;
+
+
 }
 .reservationsPage{
     position: relative;
@@ -367,29 +371,33 @@ img{
     max-width: 1065px;
     min-height: 660px;
     max-height: 660px;
+    padding-bottom: 3rem;
     border: #000000;
     border-radius: 50px;
     background-color: white;
     opacity: 78%;
-    color:black
+    color:black;
+
 }
 
 .reservationsPage .boxes.reservation form{
     border: var(--border);
     padding: 2rem;
+    height:1000px;
+    padding-bottom: 10px;
  }
  
  .reservation form .flex{
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 0rem;
  }
  
  .reservation form h3{
     background-color: var(--sub-color);
     color: var(--main-color);
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     border-radius: .5rem;
     padding: 1.2rem;
     text-align: center;
@@ -397,11 +405,11 @@ img{
  }
  
  .reservation form .flex .box{
-    flex: 1 1 40rem;
+    flex: 1 1 23rem;
  }
  
  .reservation form .flex .box p{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: var(--sub-color);
  }
  
@@ -411,7 +419,7 @@ img{
     border-bottom: var(--border);
     background: var(--main-color);
     color: var(--white);
-    font-size: 1.8rem;
+    font-size: 1rem;
     width: 100%;
  }
  
@@ -427,7 +435,7 @@ img{
 
 .reservationsPage .box .interior{
     position: relative;
-    top:20px;
+    top:10px;
     left: 20px;
     bottom: 20px;
     display: flex;
@@ -440,7 +448,7 @@ img{
     height: 1px;
 }
 
-.submitButton{
+.btn{
     margin-left: 375px;
     background-color: #fff;
     padding: 6px 13px;
@@ -457,14 +465,14 @@ img{
     line-height: normal;
 }
 
-.submitButton:hover{
+.btn:hover{
     transform: translateY(-2px);
     background-color: #fff;
     color: var(--darkRed);
     background-color: var(--yellow);
 }
 
-.reservation.box.interior.name
+/*.reservation.box.interior.name
 .reservationsPage .box .interiorResult{
     display: flex;
     flex-direction: column;
@@ -487,7 +495,7 @@ img{
     padding-left: 50px;
     padding-top: 50px;
  
- }
+ }*/
  
 
 
