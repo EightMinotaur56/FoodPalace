@@ -1,13 +1,13 @@
 <?php
-   /*$errors=[];
+   $errors=[];
     $clientName=$_POST['clientName']??null;
     $clientPhone=$_POST['clientPhone']??null;
     $partySize=$_POST['partySize']??null;
     $reservationDate=$_POST['reservationDate']??null;
-    $time=$_POST['time']??null;*/
+    $time=$_POST['time']??null;
 
 
-    if (isset($_POST['reserve'])) {
+    /*if (isset($_POST['reserve'])) {
         $name = filter_var($_POST['clientName'], FILTER_SANITIZE_STRING);
         $phone = filter_var($_POST['cientphone'], FILTER_SANITIZE_STRING);
         $guests = filter_var($_POST['partySize'], FILTER_SANITIZE_STRING);
@@ -68,10 +68,10 @@
                    </script>";
             }
         }
-     }
+     }*/
 
 
-    /*if(is_post()){
+    if(is_post()){
         if(!$clientName){
             $errors['clientName'][]="Please give your name";
         }
@@ -93,7 +93,7 @@
 
             addReservation($clientName,$clientPhone,$partySize,$fullDate,$db);
         }
-    }*/
+    }
 ?>
 
 <div class="container">
