@@ -540,7 +540,7 @@ button.goToFullMenu:hover {
 
 
 
-.submitButton{
+.submitButton{}
 .reservationsPage .boxes .interior{
     position: relative;
     top:10px;
@@ -831,7 +831,7 @@ button.goToFullMenu:hover {
 }
 .fullMenu{
     position: absolute;
-    top: 200px;
+    top: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -897,7 +897,7 @@ button.goToFullMenu:hover {
     border-radius: 30px;
 }
 /*#region footer*/
-/* .footerNavButtonFirst{
+.footerNavButtonFirst{
     position: relative;
     display: inline-block;
     top: 30px;
@@ -974,7 +974,7 @@ button.footerNavButtonLast:hover{
     background-color: var(--yellow);
 } 
 /*#endregion footer*/
-}
+
 /*#endregion footer*/
 
 
