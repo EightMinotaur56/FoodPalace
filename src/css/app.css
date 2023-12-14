@@ -700,6 +700,7 @@ img{
 .fullMenu .content .box{
     margin-left: 20px;
     margin-bottom: 50px;
+    min-height: 370px;
     min-width: fit-content;
     display: block;
     font-weight: bold;
