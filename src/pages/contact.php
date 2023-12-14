@@ -3,8 +3,6 @@
 
 
 <body>
-
-
     <div class="contact-container">
         <div class="contact-left">
             <div class="contact-info">
@@ -44,22 +42,12 @@
     </div>
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $servername = "localhost";
-        $username = "your_username";
-        $password = "your_password";
-        $dbname = "your_database_name";
-
-        $conn = new mysqli($servername, $username, $password, $dbname);
-
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
 
         $email = $_POST['email'];
         $phone = $_POST['phone'];
         $message = $_POST['message'];
 
-        $stmt = $conn->prepare("INSERT INTO contact_entries (email, phone_number, message) VALUES (?, ?, ?)");
+        $stmt = $db->prepare("INSERT INTO contact_entries (email, phone_number, message) VALUES (?, ?, ?)");
         $stmt->bind_param("sss", $email, $phone, $message);
 
         if ($stmt->execute()) {
@@ -69,7 +57,7 @@
         }
 
         $stmt->close();
-        $conn->close();
+        $db->close();
     }
     ?>
 
