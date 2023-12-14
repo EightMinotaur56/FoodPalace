@@ -2,7 +2,7 @@
 ## Project Name: Food Palace
 
 ## Purpose: 
-- The purpose of Food Palace is to create a website where a user can look at the restaurants menu and also create a reservation.
+- The purpose of Food Palace is to create a website where a user can look at the restaurants menu and also create a reservation.The aim is to create a high level hotel website where users can see all of our menus and make queries when needed.
 
 ## Intended Audience:
 - Food Palace is designed for customers that would like to look at our menu options as well
