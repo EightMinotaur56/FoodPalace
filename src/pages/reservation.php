@@ -1,10 +1,76 @@
 <?php
-    $errors=[];
+   /* $errors=[];
     $clientName=$_POST['clientName']??null;
     $clientPhone=$_POST['clientPhone']??null;
     $partySize=$_POST['partySize']??null;
     $reservationDate=$_POST['reservationDate']??null;
-    $time=$_POST['time']??null;
+    $time=$_POST['time']??null;*/
+
+
+    if (isset($_POST['reserve'])) {
+        $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+        $phone = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
+        $guests = filter_var($_POST['guests'], FILTER_SANITIZE_STRING);
+        $check_in = filter_var($_POST['check_in'], FILTER_SANITIZE_STRING);
+        $time = filter_var($_POST['time'], FILTER_SANITIZE_STRING);
+      
+     
+        $total = 0;
+        $check_bookings = $connect->prepare("SELECT * FROM `reservations` WHERE check_in =?");
+     
+        try {
+            $check_bookings->execute([$check_in]);
+            while ($fetch_bookings = $check_bookings->fetch(PDO::FETCH_ASSOC)) {
+                $total += $fetch_bookings['guests'];
+            }
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
+     
+        echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@10'></script>";
+     
+        if ($total >= 20) {
+            echo "<script>
+                   document.addEventListener('DOMContentLoaded', function() {
+                       Swal.fire({
+                           icon: 'warning',
+                           title: 'No tables Available',
+                           text: 'We have no rooms available.',
+                       });
+                   });
+               </script>";
+        } else {
+            $verify_bookings = $connect->prepare("SELECT * FROM `reservation` WHERE user_id = ? AND name = ? AND number = ? AND guests = ? AND check_in = ? AND time=?");
+            $verify_bookings->execute([$user_id, $name, $number, $guests, $check_in,  $time]);
+     
+            if ($verify_bookings->rowCount() > 0) {
+                echo "<script>
+                       document.addEventListener('DOMContentLoaded', function() {
+                           Swal.fire({
+                               icon: 'warning',
+                               title: 'Booking Error',
+                               text: 'You already have a booking with these details.',
+                           });
+                       });
+                   </script>";
+            } else {
+                $booking_id = create_unique_id(); 
+                $book_room = $connect->prepare("INSERT INTO `reservation` (reservation_id, user_id, name,  number, guests, check_in, time) VALUES (?, ?, ?, ?, ?)");
+                $book_room->execute([$reservation_id, $user_id, $name,  $number, $guests, $check_in, $time, $adults, $children]);
+     
+                echo "<script>
+                       document.addEventListener('DOMContentLoaded', function() {
+                           Swal.fire({
+                               icon: 'success',
+                               title: 'Room successfully booked',
+                               text: 'Room successfully booked.',
+                           });
+                       });
+                   </script>";
+            }
+        }
+     }
+
 
     /*if(is_post()){
         if(!$clientName){
@@ -41,17 +107,17 @@
       <div class="flex">
          <div class="box">
             <p>your name <span>*</span></p>
-            <input type="text" name="name" maxlength="50" required placeholder="enter your name" class="input">
+            <input type="text" name="name" maxlength="40" required placeholder="enter your name" class="input">
          </div>
+        
          <div class="box">
-            <p>your email <span>*</span></p>
-            <input type="email" name="email" maxlength="50" required placeholder="enter your email" class="input">
-         </div>
-         <div class="box">
-            <p>your number <span>*</span></p>
+            <p>your number  <span>*</span></p>
             <input type="number" name="number" maxlength="10" min="0" max="9999999999" required placeholder="enter your number" class="input">
          </div>
-         
+         <div class="box" >
+                        <p>How many guests? <style></style></p>
+                        <input type="number" name="guests" value="<?= $partySize?>" placeholder="1">
+                    </div>
          </div>
          <div class="box">
             <p>check-in <span>*</span></p>
@@ -85,7 +151,7 @@
                         </select>
          </div>
       </div>
-      <input type="submit" value="book now" name="submit" class="btn">
+      <input type="submit" value="reserve" name="reserve" class="btn">
    </form>
 
 </section>
