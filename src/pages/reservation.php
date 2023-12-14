@@ -8,6 +8,11 @@
 
 
     /*if (isset($_POST['reserve'])) {
+=======
+
+/*
+    if (isset($_POST['reserve'])) {
+>>>>>>> Stashed changes
         $name = filter_var($_POST['clientName'], FILTER_SANITIZE_STRING);
         $phone = filter_var($_POST['cientphone'], FILTER_SANITIZE_STRING);
         $guests = filter_var($_POST['partySize'], FILTER_SANITIZE_STRING);
@@ -106,27 +111,27 @@
       <div class="flex">
          <div class="box">
             <p>your name <span>*</span></p>
-            <input type="text" name="clientName" maxlength="40" required placeholder="enter your name" class="input">
+            <input type="text" name="clientName" maxlength="40" required placeholder="enter your name" class="input" value="<?=$clientName?>">
          </div>
         
          <div class="box">
             <p>your number  <span>*</span></p>
-            <input type="number" name="clientNumber" maxlength="10" min="0" max="9999999999" required placeholder="enter your number" class="input">
+            <input type="number" name="clientNumber" maxlength="10" min="0" max="9999999999" required placeholder="enter your number" class="input" value="<?=$clientNumber?>">
          </div>
         
          
          <div class="box">
             <p>check-in <span>*</span></p>
-            <input type="date" name="reservationDate" class="input" required>
+            <input type="date" name="reservationDate" class="input" required value="<?=$reservationDate?>">
          </div>
          <div class="box" >
                         <p>How many guests? <style></style></p>
-                        <input type="number" name="partySize" value="<?= $partySize?>" placeholder="1">
+                        <input type="number" name="partySize" value="<?= $partySize?>" placeholder="1" value="<?=$partySize?>">
                     </div>
          </div>
          <div class="box">
             <p>time <span>*</span></p>
-            <select name="time" class="input"  required>
+            <select name="time" class="input"  required value="<?=$time?>">
                             <option value=""></option>
                             <option value="12:00">12:00</option>
                             <option value="12:30">12:30</option>
@@ -152,7 +157,7 @@
                         </select>
          </div>
       </div>
-      <input type="reserve" value="reserve" name="reserve" class="btn">
+      <input type="submit" value="reserve" name="reserve" class="btn">
    </form>
 
 </section>
