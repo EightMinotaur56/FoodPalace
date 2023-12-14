@@ -11,6 +11,12 @@
     <h1>VEGAN CATEGORY</h1>
     <div class="content">
         <?php foreach($vegans as $vegan):?>
-            <img src="<?=$vegan['imageURL']?>" alt="">
+            <div class="box">
+                <img src="<?=$vegan['imageURL']?>" alt="">
+                <?php echo $vegan['name']; ?>
+                <?php echo '<br>'; ?>
+                <?php echo $vegan['cost']; ?>
+            </div>
         <?php endforeach;?>
     </div>
+    

@@ -13,15 +13,12 @@ ul *{
 }
 
 img{
-    width: 200px;
-    height: 200px;
     resize: both;
     display: flex;
     width: 220px;
     height: 270px;
     border: #000000;
     color:black;
-    margin-left: 60px;
     justify-content: center;
     align-items: center;
 }
@@ -508,9 +505,11 @@ img{
     align-items: center;
     justify-content: space-between;
 }
-.vegan .content img {
-    display: flex;
+.vegan .content .box{
     margin: 0 auto;
+    min-width: fit-content;
+    display: block;
+    font-weight: bold;
 }
 /*#endregion vegan*/
 
