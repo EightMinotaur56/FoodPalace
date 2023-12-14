@@ -465,7 +465,7 @@ button.goToFullMenu:hover {
 }
 
 
-.reservationsPage{
+.reservationsPage{}
 
 .reservationsPage .boxes{
 
@@ -712,7 +712,7 @@ button.goToFullMenu:hover {
 .vegan .content img {
     display: flex;
     margin: 0 auto;
-
+}
 .vegan .content .box{
     margin: 0 auto;
     min-width: fit-content;
