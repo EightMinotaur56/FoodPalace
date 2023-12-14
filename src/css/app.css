@@ -361,6 +361,57 @@ img{
     color:black
 }
 
+.reservation form{
+    border: var(--border);
+    padding: 2rem;
+ }
+ 
+ .reservation form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+ }
+ 
+ .reservation form h3{
+    background-color: var(--sub-color);
+    color: var(--main-color);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    padding: 1.2rem;
+    text-align: center;
+    text-transform: capitalize;
+ }
+ 
+ .reservation form .flex .box{
+    flex: 1 1 40rem;
+ }
+ 
+ .reservation form .flex .box p{
+    font-size: 1.8rem;
+    color: var(--sub-color);
+ }
+ 
+ .reservation form .flex .box .input{
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-bottom: var(--border);
+    background: var(--main-color);
+    color: var(--white);
+    font-size: 1.8rem;
+    width: 100%;
+ }
+ 
+ .reservation form .flex .box .input::placeholder{
+    color: rgba(220, 198, 156, .6);
+ }
+ 
+ .reservation form .flex .box input[type="date"]::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+ }
+ 
+
+
 .reservationsPage .box .interior{
     position: relative;
     top:20px;
@@ -418,7 +469,7 @@ img{
 .reservationsPage .box .interior input.name {
     font-size: medium;
     font-family:Poppins;
-    width: 200px;
+    width: 150px;
     height:50px;
     padding-left: 50px;
     padding-top: 50px;
